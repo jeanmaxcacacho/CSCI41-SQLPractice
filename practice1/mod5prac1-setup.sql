@@ -15,9 +15,19 @@ create table publisher(
     pr_info text
 );
 
+create table author(
+    author_id int auto_increment primary key,
+    name varchar(255) not null,
+    address varchar(255),
+    contract varchar(255)
+);
+
 create table book(
     title_id int auto_increment primary key,
     title varchar(255) not null,
+    author_name varchar(255) not null,
+    author_address varchar(255),
+    author_contract varchar(255),
     price float(2) not null,
     advance float(2),
     royalty float(2),
@@ -29,14 +39,7 @@ create table book(
     foreign key (author_id) references author(author_id) on delete restrict
 );
 
-create table author(
-    author_id int auto_increment primary key,
-    name varchar(255) not null,
-    address varchar(255),
-    contract varchar(255)
-);
-
--- Inserting Data into Tables
+-- value insertion from original setup script
 INSERT INTO publisher(name) VALUES('Mania Books Ltd');
 INSERT INTO publisher(name) VALUES('Prentice Hall');
 
@@ -57,3 +60,9 @@ VALUES
 ('A Song of Ice and Fire: A Dance with Dragons','George Rogelio Reyes Martin','Utah City','1 year',900.00,90000,0.10,'2006-08-01',2),
 ('A Song of Ice and Fire: The Winds of Winter','George Rogelio Reyes Martin','Utah City','1 year',900.00,90000,0.10,'2007-08-01',2),
 ('A Song of Ice and Fire: A Dream of Spring','George Rogelio Reyes Martin','Utah City','1 year',900.00,90000,0.10,CURDATE(),2);
+
+-- bonus challenge compounded insertion
+insert into author(name, address, contract)
+select distinct b.author_name, b.author_address, b.author_contract
+from book b
+where b.author_name is not null;
