@@ -1,0 +1,93 @@
+No. 2 Expected Result:
++---------+---------------------------------------+--------------------+----------------+-----------------+-------+---------+---------+-------+------------+--------+
+| book_id | title                                 | author_name        | author_address | author_contract | price | advance | royalty | notes | pubdate    | pub_id |
++---------+---------------------------------------+--------------------+----------------+-----------------+-------+---------+---------+-------+------------+--------+
+|       2 | Hubad na Uhaw                         | Rodrigo Rodriguez  | Mexico City    | 1 year          |    25 |    6000 |     0.1 | NULL  | 2020-04-24 |      1 |
+|       3 | Asupreng Alapaap                      | Rodrigo Rodriguez  | Mexico City    | 1 year          |   250 |    1000 |     0.1 | NULL  | 2020-04-24 |      1 |
+|       4 | Musmos sa Buwan                       | Rodrigo Rodriguez  | Mexico City    | 1 year          |   250 |    1000 |     0.1 | NULL  | 2020-04-24 |      1 |
+|       8 | Lord of the Rings: Return of the King | John Lloyd Tolkien | London City    | 1 year          |   600 |    1000 |     0.1 | NULL  | 2020-04-24 |      2 |
++---------+---------------------------------------+--------------------+----------------+-----------------+-------+---------+---------+-------+------------+--------+
+
+No. 3 Expected Result:
++-------------------+
+| author_name       |
++-------------------+
+| Jeffrey A. Hoffer |
+| Rodrigo Rodriguez |
+| Rodrigo Rodriguez |
+| Rodrigo Rodriguez |
+| Rodrigo Rodriguez |
++-------------------+
+
+No. 4 Expected Result:
++----------------------------+-------+
+| title                      | price |
++----------------------------+-------+
+| Modern Database Management | 499.5 |
+| Asupreng Alapaap           |   250 |
+| Musmos sa Buwan            |   250 |
+| Gora in Keribels Land      |   250 |
++----------------------------+-------+
+
+No. 7 Expected Result:
++---------+-------------------------------------------+
+| book_id | title                                     |
++---------+-------------------------------------------+
+|       2 | Hubad na Uhaw                             |
+|       3 | Asupreng Alapaap                          |
+|       4 | Musmos sa Buwan                           |
+|       5 | Gora in Keribels Land                     |
+|       1 | Modern Database Management                |
+|      16 | The Girl with the Dragon Tattoo           |
+|       6 | Lord of the Rings: Fellowship of the Ring |
+|       7 | Lord of the Rings: The Two Towers         |
+|       8 | Lord of the Rings: Return of the King     |
+|       9 | A Song of Ice and Fire: A Game of Thrones |
++---------+-------------------------------------------+
+
+No. 8 Expected Result:
++----------------------------------------------+
+| title                                        |
++----------------------------------------------+
+| Lord of the Rings: Fellowship of the Ring    |
+| Lord of the Rings: The Two Towers            |
+| Lord of the Rings: Return of the King        |
+| A Song of Ice and Fire: A Game of Thrones    |
+| A Song of Ice and Fire: A Storm of Swords    |
+| A Song of Ice and Fire: A Clash of Kings     |
+| A Song of Ice and Fire: A Feast of Crows     |
+| A Song of Ice and Fire: A Dance with Dragons |
+| A Song of Ice and Fire: The Winds of Winter  |
+| A Song of Ice and Fire: A Dream of Spring    |
++----------------------------------------------+
+
+No. 9 Expected Result:
++----------------------------------------------+-----------------------------+-------------------+
+| Title of Book                                | Name of Author              | Name of Publisher |
++----------------------------------------------+-----------------------------+-------------------+
+| The Girl with the Dragon Tattoo              | Steig Larsson               | MacLehose Press   |
+| Musmos sa Buwan                              | Rodrigo Rodriguez           | Mania Books Ltd   |
+| Gora in Keribels Land                        | Rodrigo Rodriguez           | Mania Books Ltd   |
+| Hubad na Uhaw                                | Rodrigo Rodriguez           | Mania Books Ltd   |
+| Asupreng Alapaap                             | Rodrigo Rodriguez           | Mania Books Ltd   |
+| A Song of Ice and Fire: A Clash of Kings     | George Rogelio Reyes Martin | Prentice Hall     |
+| A Song of Ice and Fire: A Feast of Crows     | George Rogelio Reyes Martin | Prentice Hall     |
+| A Song of Ice and Fire: A Dance with Dragons | George Rogelio Reyes Martin | Prentice Hall     |
+| A Song of Ice and Fire: The Winds of Winter  | George Rogelio Reyes Martin | Prentice Hall     |
+| A Song of Ice and Fire: A Dream of Spring    | George Rogelio Reyes Martin | Prentice Hall     |
+| A Song of Ice and Fire: A Game of Thrones    | George Rogelio Reyes Martin | Prentice Hall     |
+| A Song of Ice and Fire: A Storm of Swords    | George Rogelio Reyes Martin | Prentice Hall     |
+| Modern Database Management                   | Jeffrey A. Hoffer           | Prentice Hall     |
+| Lord of the Rings: Fellowship of the Ring    | John Lloyd Tolkien          | Prentice Hall     |
+| Lord of the Rings: The Two Towers            | John Lloyd Tolkien          | Prentice Hall     |
+| Lord of the Rings: Return of the King        | John Lloyd Tolkien          | Prentice Hall     |
++----------------------------------------------+-----------------------------+-------------------+
+
+ No. 10 Expected Result:
+ +-----------------------------+
+| Author has Name with T      |
++-----------------------------+
+| John Lloyd Tolkien          |
+| George Rogelio Reyes Martin |
+| Steig Larsson               |
++-----------------------------+
