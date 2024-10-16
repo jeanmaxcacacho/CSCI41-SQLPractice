@@ -18,14 +18,20 @@ create table publisher(
 create table book(
     title_id int auto_increment primary key,
     title varchar(255) not null,
-    author_name varchar(255) not null,
-    author_address varchar(255),
-    author_contract varchar(255),
     price float(2) not null,
     advance float(2),
     royalty float(2),
     notes text,
     pubdate date not null,
     pub_id int,
-    foreign key (pub_id) references publisher(pub_id) on delete restrict
+    author_id int,
+    foreign key (pub_id) references publisher(pub_id) on delete restrict,
+    foreign key (author_id) references author(author_id) on delete restrict
+);
+
+create table author(
+    author_id int auto_increment primary key,
+    name varchar(255) not null,
+    address varchar(255),
+    contract varchar(255)
 );
