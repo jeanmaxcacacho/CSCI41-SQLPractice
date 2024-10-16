@@ -1,0 +1,85 @@
+No. 1 Expected Result:
++-----------------+----------------+--------------+---------------+------------------+
+| Customer Number | Customer Name  | Order Number | Date of Order | Date of Shipping |
++-----------------+----------------+--------------+---------------+------------------+
+|            1001 | BONITA MORALES |         1003 | 2003-04-01    | 2003-04-01       |
+|            1003 | LEILA SMITH    |         1006 | 2003-04-01    | 2003-04-02       |
+|            1003 | LEILA SMITH    |         1016 | 2003-04-04    | NULL             |
+|            1015 | STEVE SCHELL   |         1017 | 2003-04-04    | 2003-04-05       |
+|            1001 | BONITA MORALES |         1018 | 2003-04-05    | NULL             |
++-----------------+----------------+--------------+---------------+------------------+
+
+No. 2 Expected Result:
++-----------------+-----------------+--------------+
+| Contact Name    | Publisher Name  | Phone        |
++-----------------+-----------------+--------------+
+| JANE TOMLIN     | PUBLISH OUR WAY | 010-410-0010 |
+| SEBASTIAN JONES | REED-N-RITE     | 800-555-8284 |
++-----------------+-----------------+--------------+
+
+No. 3 Expected Result:
++------------------------+-----------------+
+| Book Title             | Author's Name   |
++------------------------+-----------------+
+| REVENGE OF MICKEY      | JANICE JONES    |
+| PAINLESS CHILD-REARING | JACK BAKER      |
+| PAINLESS CHILD-REARING | OSCAR FIELDS    |
+| PAINLESS CHILD-REARING | ROBERT ROBINSON |
++------------------------+-----------------+
+
+No. 4 Expected Result:
++---------+-----------------+
+| orderno | Number of Items |
++---------+-----------------+
+|    1001 |               2 |
++---------+-----------------+
+
+No. 5 Expected Result:
++-----------------+-------------+
+| Customer Name   | Referred By |
++-----------------+-------------+
+| TAMMY GIANA     | LEILA SMITH |
+| JORGE PEREZ     | LEILA SMITH |
+| NICHOLAS NGUYEN | MESHIA CRUZ |
+| MICHELL DAUM    | JAKE LUCAS  |
+| JENNIFER SMITH  | LEILA SMITH |
++-----------------+-------------+
+
+No. 6 Expected Result:
++-----------------+------------------+--------------+------------+
+| Customer Number | Customer Name    | Order Number | Order Date |
++-----------------+------------------+--------------+------------+
+|            1001 | BONITA MORALES   |         1003 | 2003-04-01 |
+|            1001 | BONITA MORALES   |         1018 | 2003-04-05 |
+|            1002 | RYAN THOMPSON    |         NULL | NULL       |
+|            1003 | LEILA SMITH      |         1006 | 2003-04-01 |
+|            1003 | LEILA SMITH      |         1016 | 2003-04-04 |
+|            1004 | THOMAS PIERSON   |         1008 | 2003-04-02 |
+|            1005 | CINDY GIRARD     |         1000 | 2003-03-31 |
+|            1005 | CINDY GIRARD     |         1009 | 2003-04-03 |
+|            1006 | MESHIA CRUZ      |         NULL | NULL       |
+|            1007 | TAMMY GIANA      |         1007 | 2003-04-02 |
+|            1007 | TAMMY GIANA      |         1014 | 2003-04-04 |
+|            1008 | KENNETH JONES    |         1020 | 2003-04-05 |
+|            1009 | JORGE PEREZ      |         NULL | NULL       |
+|            1010 | JAKE LUCAS       |         1001 | 2003-03-31 |
+|            1010 | JAKE LUCAS       |         1011 | 2003-04-03 |
+|            1011 | REESE MCGOVERN   |         1002 | 2003-03-31 |
+|            1012 | WILLIAM MCKENZIE |         NULL | NULL       |
+|            1013 | NICHOLAS NGUYEN  |         NULL | NULL       |
+|            1014 | JASMINE LEE      |         1013 | 2003-04-03 |
+|            1015 | STEVE SCHELL     |         1017 | 2003-04-04 |
+|            1016 | MICHELL DAUM     |         NULL | NULL       |
+|            1017 | BECCA NELSON     |         1012 | 2003-04-03 |
+|            1018 | GREG MONTIASA    |         1005 | 2003-04-01 |
+|            1018 | GREG MONTIASA    |         1019 | 2003-04-05 |
+|            1019 | JENNIFER SMITH   |         1010 | 2003-04-03 |
++-----------------+------------------+--------------+------------+
+
+No. 7 Expected Result:
++-------------------------+-------------+
+| title                   | category    |
++-------------------------+-------------+
+| E-BUSINESS THE EASY WAY | Computer    |
+| PAINLESS CHILD-REARING  | Family Life |
++-------------------------+-------------+
