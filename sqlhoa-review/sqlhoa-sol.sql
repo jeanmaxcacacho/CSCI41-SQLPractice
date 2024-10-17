@@ -127,11 +127,21 @@ where
 		join book b2 on pub2.pubID = b2.pubID
 		where b2.title like 'BIG BEAR%'
 		) 
-	and (b.retail * oi.quantity - b.cost * oi.quantity) >= (
+	and (b.retail - b.cost) > (
+		select avg(b3.retail - b3.cost)
+		from book b3
+	);
+
+		/*
+			version I will die by
+
+		(b.retail * oi.quantity - b.cost * oi.quantity) >= (
 		select avg(b3.retail * oi2.quantity - b3.cost * oi2.quantity)
 		from book b3
 		join orderitem oi2 on b3.ISBN = oi2.ISBN
-		); -- try swapping this whole subquery with an 18
+		);
+
+		*/
 
 -- 7. books more expensive than the most expensive cooking book
 select b.ISBN, b.title, b.category, b.retail
