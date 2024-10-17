@@ -8,11 +8,11 @@ select b.author_name
 from book b
 where b.price < 600;
 
--- titles and prices of books where price (x) 50 <= x <= 600
+-- titles and prices of books where price (x) 50 <= x <= 500
 -- expected result is wrong............?
 select b.title, b.price
 from book b
-where b.price between 50 and 600;
+where b.price between 50 and 500;
 
 -- book id and title of 10 cheapest books
 -- girl with dragon tattoo will not be here since
